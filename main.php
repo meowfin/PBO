@@ -5,13 +5,11 @@ require_once 'classes/Stack.php';
 require_once 'classes/Queue.php';
 require_once 'classes/HashMap.php';
 
-// Array utama berisi nama-nama koleksi
 $collections = ["ArrayList", "LinkedList", "Stack", "Queue", "HashMap"];
 
 echo "=== ARRAY OF COLLECTION CLASSES ===\n";
 print_r($collections);
 
-// Tes masing-masing implementasi
 echo "\n=== TEST ARRAYLIST ===\n";
 $list = new ArrayList();
 $list->add("Satu");
@@ -41,3 +39,4 @@ $map->put("Arifin", 100);
 $map->put("Budi", 90);
 print_r($map->getAll());
 ?>
+
